@@ -1,7 +1,8 @@
 SQL Learning for QA
 
 Practical SQL exercises for QA testing: data validation, joins, filters, and realistic test scenarios.  
-Includes mock tables and queries used in manual and automated testing.
+Includes mock tables and queries used in manual and automated testing.This SQLite database (mock_data.db) contains synthetic test 
+data generated via Mockaroo. All SQL queries in /sql_exercises/ were validated locally using DB Browser for SQLite.
 
 Files:
 - 1 - select_where.sql` – basic filters
