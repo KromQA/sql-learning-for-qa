@@ -1,3 +1,5 @@
+
+First Set:
 1. Count all users in the MOCK_DATA table
 
         select Count(*) from MOCK_DATA
@@ -21,3 +23,36 @@
 
         select * from MOCK_DATA
         where gender = 'Female'
+
+Second Set:
+1. Show users whose first name starts with the letter “A”
+
+        select * from MOCK_DATA
+        where first_name like 'A%'
+
+2. Show users whose last name contains the letter “z”
+
+        select * from MOCK_DATA
+        where last_name like '%z%'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
