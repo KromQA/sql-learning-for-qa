@@ -5,11 +5,10 @@ Includes mock tables and queries used in manual and automated testing.This SQLit
 data generated via Mockaroo. All SQL queries in /sql_exercises/ were validated locally using DB Browser for SQLite.
 
 Files:
-- 1 - select_where.sql` – basic filters
-- 2 - joins.sql` – table joins
-- 3 - groupby_having.sql` – grouped checks
-- 4 - aggregates.sql` – counts, max, min
-- 5 - test_scenarios.sql` – QA-style queries
-- mock_data/` – sample tables (`clients`, `orders`, `policies`)
+- mock_data/` – sample tables
+- sql_exercises
+    1. Basic_Filters
+    2. Conditions & Ranges
+    3. qa_scenarios.sql
 
 Author: **KromQa**
