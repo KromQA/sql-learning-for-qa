@@ -1,0 +1,23 @@
+1. Count all users in the MOCK_DATA table
+
+        select Count(*) from MOCK_DATA
+
+2. Show only active users
+        
+        select * from MOCK_DATA
+        where active = '1'
+
+3. Show users from Poland
+
+        select * from MOCK_DATA
+        where country = 'Poland'
+
+4. Show users whose email ends with .pl
+
+        select * from MOCK_DATA
+        where email like '%.pl%'
+
+5. Show users with gender marked as Female
+
+        select * from MOCK_DATA
+        where gender = 'Female'
