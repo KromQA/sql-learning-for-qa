@@ -1,0 +1,131 @@
+
+--First Set--
+1. Count all users in the MOCK_DATA table
+
+        select Count(*) from MOCK_DATA
+
+                Execution finished without errors.
+                Result: 1 rows returned in 10ms
+
+2. Show only active users
+        
+        select * from MOCK_DATA
+        where active = '1'
+
+                Execution finished without errors.
+                Result: 502 rows returned in 35ms
+
+3. Show users from Poland
+
+        select * from MOCK_DATA
+        where country = 'Poland'
+
+                Execution finished without errors.
+                Result: 31 rows returned in 33ms
+
+4. Show users whose email ends with .pl
+
+        select * from MOCK_DATA
+        where email like '%.pl%'
+
+                Execution finished without errors.
+                Result: 31 rows returned in 40ms
+
+5. Show users with gender marked as Female
+
+        select * from MOCK_DATA
+        where gender = 'Female'
+
+                Execution finished without errors.
+                Result: 463 rows returned in 19ms
+
+--Second Set--
+1. Show users whose first name starts with the letter “A”
+
+        select * from MOCK_DATA
+        where first_name like 'A%'
+
+                Execution finished without errors.
+                Result: 82 rows returned in 35ms
+
+2. Show users whose last name contains the letter “z”
+
+        select * from MOCK_DATA
+        where last_name like '%z%'
+
+3.  Show users with email addresses from Gmail (@gmail.com)
+
+        select * from MOCK_DATA
+        where email like '%@gmail.com'
+
+                Execution finished without errors.
+                Result: 33 rows returned in 48ms
+
+4.  Show users whose country is either Poland or Germany
+
+        select * from MOCK_DATA
+        where country = 'Poland' OR country = 'Germany'
+
+                Execution finished without errors.
+                Result: 36 rows returned in 39ms     
+
+5. Show users whose gender is not specified as “Male” or “Female”
+
+        select * from MOCK_DATA
+        where NOT gender = 'Male' AND NOT gender = 'Female'
+
+                Execution finished without errors.
+                Result: 92 rows returned in 29ms                
+
+6. Show users with IP addresses that contain the number “10”
+
+        select * from MOCK_DATA
+        where ip_address like '%10%'
+
+                Execution finished without errors.
+                Result: 170 rows returned in 36ms
+
+7. Show users whose registration date is exactly today (05/10/2025)
+
+        select * from MOCK_DATA
+        where registration_date = '05/10/2025'
+
+                Execution finished without errors.
+                Result: 0 rows returned in 14ms 
+
+8. Show users whose order amount is equal to 0
+
+        select * from MOCK_DATA
+        where order_amount = '0'
+
+                Execution finished without errors.
+                Result: 0 rows returned in 11ms
+
+9. Show users whose policy expiry date is missing or empty
+
+        select * from MOCK_DATA
+        where policy_expiry IS NULL
+
+                Execution finished without errors.
+                Result: 0 rows returned in 8ms
+
+10. Show users whose email field is blank or null
+
+        select * from MOCK_DATA
+        where email IS NULL
+
+                Execution finished without errors.
+                Result: 0 rows returned in 20ms
+
+
+
+
+
+
+
+
+
+
+
+
+
